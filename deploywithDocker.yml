@@ -5,12 +5,12 @@
       shell: docker login -u anikethan147@gmail.com -p germanhitler_5A zaptic123.jfrog.io
     
     - name: pull an image
-      shell: docker pull https://zaptic123.jfrog.io/artifactory/repo/myimage/
+      shell: docker pull https://zaptic123.jfrog.io/artifactory/repo/myimage/latest
 
     #- name: remove container
      # shell: docker rm -f devopsAppDeploy
         
     - name: create a application container
-      shell: docker run -id --name devopsAppDeploy -p 8111:8080 zaptic123.jfrog.io/artifactory/repo/myimage:latest
+      shell: docker run -id --name devopsAppDeploy -p 8111:8080 zaptic123.jfrog.io/artifactory/repo/myimage/latest
  
    
