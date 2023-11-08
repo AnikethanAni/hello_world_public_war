@@ -1,16 +1,19 @@
 ---
 - hosts: websever
   tasks:
-   # - name: login to dockerhub
-   #    shell: docker login -u thimmeshasm18@gmail.com -p Shimoga@461995     
+    - name: login to dockerhub
+      docker_login:
+       registry_url: https://hub.docker.com/
+       username: thimmeshasm18@gmail.com 
+       password: Shimoga@461995     
     
-    #- name: pull an image
-     # shell: docker pull docker pull thimmeshasm/tomcat147
+    - name: pull an image
+      shell: docker pull docker pull thimmeshasm/tomcat147
 
-    #- name: remove container
-     # shell: docker rm -f devopsAppDeploy
+    - name: remove container
+      shell: docker rm -f devopsAppDeploy
         
-    #- name: create a application container
-     # shell: docker run -id --name devopsAppDeploy -p 8111:8080 thimmeshasm/tomcat147
+    - name: create a application container
+      shell: docker run -id --name devopsAppDeploy -p 8111:8080 thimmeshasm/tomcat147
  
    
