@@ -8,7 +8,7 @@
        #password: Shimoga@461995     
     
     - name: pull an image
-      shell: docker pull docker pull thimmeshasm/tomcat147
+      shell: docker pull thimmeshasm/tomcat147
 
     - name: remove container
       shell: docker rm -f devopsAppDeploy
