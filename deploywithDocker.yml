@@ -2,7 +2,7 @@
 - hosts: websever
   tasks:
     - name: login to jfrog
-      shell: docker login -u thimmeshasm18@gmail.com -p Shimoga@461995      
+      shell: docker login -u thimmeshasm18@gmail.com -p Shimoga@461995 https://hub.docker.com      
     
     - name: pull an image
       shell: docker pull docker pull thimmeshasm/tomcat147
