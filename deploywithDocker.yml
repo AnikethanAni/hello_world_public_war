@@ -1,11 +1,11 @@
 ---
 - hosts: websever
   tasks:
-    - name: login to dockerhub
-      docker_login:
-       registry_url: https://hub.docker.com/
-       username: thimmeshasm18@gmail.com 
-       password: Shimoga@461995     
+    #- name: login to dockerhub
+     # docker_login:
+      # registry_url: https://hub.docker.com/
+       #username: thimmeshasm18@gmail.com 
+       #password: Shimoga@461995     
     
     - name: pull an image
       shell: docker pull docker pull thimmeshasm/tomcat147
